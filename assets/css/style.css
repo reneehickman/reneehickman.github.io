@@ -53,6 +53,11 @@ section.content-section .content-item .content-date {
 
 
 @media (max-width:992px) {
+
+	#bar{
+		display:none;
+	}
+	
 	.logo{
         max-height:100px;
         display:none;
@@ -177,6 +182,8 @@ section.content-section .content-item .content-date {
         height:100%;
         padding:0px;
         margin-top:10px;
+        padding-left: 15px;
+        padding-right: 15px;
     }
 
     .logo2{
@@ -185,7 +192,7 @@ section.content-section .content-item .content-date {
 
     .hr{
         border:1px solid #fff;
-        width:94%;
+        width: 85%;
     }
 
     .navbar .navbar-nav .nav-link {
@@ -215,13 +222,16 @@ section.content-section .content-item .content-date {
 		width: 20rem;
 		height: 100vh;
 		/* border-right: 15px solid #fff; */
+		padding-left: 0px;
+		padding-right: 0px;
 	}
 	#sideNav .navbar-brand {
 		display: -webkit-box;
 		display: -ms-flexbox;
 		display: flex;
-		margin-top:1.5em;
-		padding: .5rem
+		margin-top:2em;
+		margin-top:1em;
+		padding: .5rem;
 	}
 	#sideNav .navbar-brand .img-profile {
 		max-width: 12rem;
@@ -239,7 +249,9 @@ section.content-section .content-item .content-date {
 		-ms-flex-positive: 0;
 		flex-grow: 0;
 		width: 100%;
-		margin-bottom: auto
+		margin-bottom: auto;
+		z-index:1;
+
 	}
 	#sideNav .navbar-collapse .navbar-nav {
 		-webkit-box-orient: vertical;
@@ -250,18 +262,34 @@ section.content-section .content-item .content-date {
 	}
 	#sideNav .navbar-collapse .navbar-nav .nav-item {
 		display: block;
+		width:100%;
+		padding-left:70px;
+		margin-bottom:10px;
+
+
 	}
 	#sideNav .navbar-collapse .navbar-nav .nav-item .nav-link {
         display: block;
-        margin-right:15px;
-	}
+/*         border-radius:0px 0px 0px 0px; */
+        border-radius:5px 0px 0px 5px;
+        font-weight:900;
+        font-size:1.2em;
+        padding-right:90px;
+        /* margin-right:15px; */
+ }
 
 	.navbar-light .navbar-nav .nav-link:hover{
     	color:rgba(255,255,255,.75);
+/*     	background:#fff;
+    	color:#f47e4f;
+    	box-shadow: -3px 3px 3px 1px rgba(0, 0, 0, .2);  */
     }
 
 	.navbar-light .navbar-nav .nav-link.active{
     	color:rgba(255,255,255,.75);
+    	background:#fff;
+    	color:#f47e4f;
+    	box-shadow: -3px 3px 3px 1px rgba(0, 0, 0, .2); 
     }
 	
 }
