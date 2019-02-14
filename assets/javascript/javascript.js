@@ -1,49 +1,47 @@
-$(function() {
-    $('a[href*="#"]').click(function() {
-      $('#sideNav a').removeClass('active');
-      var target = $(this.hash);
-      if (target.length) {
-        $("html, body").animate( {
-            scrollTop: target.offset().top
-          },
-          1000
-        );
-      }
-    });
+var mainNavLinks = document.querySelectorAll("nav ul li a");
+var mainSections = document.querySelectorAll("section");
+
+var lastId;
+var cur = [];
+
+window.addEventListener("scroll", function(){
+
+  mainNavLinks.forEach(function(link) {
+    var section = document.querySelector(link.hash);
+    if (section.length) {
+          $("html, body").animate( {
+              scrollTop: section.offset().top
+            },
+            500
+          );
+        }            
   });
 
-  $('#sideNav a').click(function(e) {
-    e.preventDefault();
-    $('#sideNav a').removeClass('active');
-    $(this).addClass('active');
 });
-
-
-(function($) {
-  "use strict"; // Start of use strict
-
-  // Smooth scrolling using jQuery easing
-  // $('a.js-scroll-trigger[href*="#"]:not([href="#"])').click(function() {
-  //   if (location.pathname.replace(/^\//, '') == this.pathname.replace(/^\//, '') && location.hostname == this.hostname) {
-  //     var target = $(this.hash);
-  //     target = target.length ? target : $('[name=' + this.hash.slice(1) + ']');
-  //     if (target.length) {
-  //       $('html, body').animate({
-  //         scrollTop: (target.offset().top)
-  //       }, 1000, "easeInOutExpo");
-  //       return false;
-  //     }
-  //   }
-  // });
-
-  // Closes responsive menu when a scroll trigger link is clicked
-  $('.js-scroll-trigger').click(function() {
-    $('.navbar-collapse').collapse('hide');
-  });
 
   // Activate scrollspy to add active class to navbar items on scroll
   $('body').scrollspy({
     target: '#sideNav'
   });
 
-})(jQuery); // End of use strict
+
+  $("#hamburger").click(function(e){
+    e.preventDefault();
+    if ($("#sideNav").hasClass('borderin')) {
+      $("#sideNav").removeClass('borderin');
+     }
+     else
+     {
+      $("#sideNav").addClass('borderin');
+     }
+  });
+
+    // Closes responsive menu when a scroll trigger link is clicked
+  $('.js-scroll-trigger').click(function() {
+    $('.navbar-collapse').removeClass('show');
+    $("#sideNav").addClass('borderin');
+  });
+
+
+
+

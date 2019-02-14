@@ -17,36 +17,51 @@
 </head>
 
 <body id="page-top">
-    <div id="top">
+    <section id="home" class="content-section">
 
-    </div>
+    </section>
 
-    <nav class="navbar navbar-expand-lg bg-primary navbar-light fixed-top" id="sideNav">
-      <a class="logoLg" href="#top"><img class="img-fluid img-profile mx-auto mb-2 logo" src="assets/images/logo-01.png" alt=""></a>
-      <a class="logoMobile" href="#top"><img class="img-fluid img-profile mx-auto mb-2 logo2" src="assets/images/logo_mobile-02.png" alt=""></a>
+    <nav class="navbar navbar-expand-lg bg-primary navbar-light fixed-top borderin" id="sideNav">
+      <a class="logoLg" href="#home"><img class="img-fluid img-profile mx-auto logo" src="assets/images/logo-01.png" alt=""></a>
+      <a class="logoMobile" href="#home"><img class="img-fluid img-profile mx-auto mb-2 logo2" src="assets/images/logo_mobile-02.png" alt=""></a>
       <hr class ="hr m-0">
-      <a class="navbar-brand .js-scroll-trigger" href="#page-top">
+      <a class="navbar-brand js-scroll-trigger mr-0" href="#home">
       <span class="d-none d-lg-block">
         <img class="img-fluid img-profile rounded-circle mx-auto mb-2 pic" src="assets/images/pic.jpg" alt="">
       </span>
     </a>
-    <button class="navbar-light navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+    <button class="navbar-light navbar-toggler" type="button" id="hamburger" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
       <span class="navbar-light navbar-toggler-icon"></span>
     </button>
     <div class="collapse navbar-collapse" id="navbarSupportedContent">
       <ul class="navbar-nav" id="parentLink">
         <li class="nav-item about">
-          <a class="nav-link .js-scroll-trigger" href="#about">About</a>
+          <a class="nav-link js-scroll-trigger" href="#about">About</a>
         </li>
         <li class="nav-item portfolio">
-          <a class="nav-link .js-scroll-trigger" href="#portfolio">Portfolio</a>
+          <a class="nav-link js-scroll-trigger" href="#portfolio">Portfolio</a>
         </li>
         <li class="nav-item contact">
-          <a class="nav-link .js-scroll-trigger" href="#contact">Contact</a>
+          <a class="nav-link js-scroll-trigger" href="#contact">Contact</a>
         </li>
       </ul>
     </div>
     <div id="bar"></div>
+
+    <div class="social-icons">
+      <a href="#">
+        <i class="fab fa-github"></i>
+      </a>
+      <a href="#">
+        <i class="fab fa-linkedin-in"></i>
+      </a>
+      <a href="#">
+        <i class="fab fa-youtube"></i>
+      </a>
+      <a href="#">
+        <i class="fas fa-envelope"></i>
+      </a>
+    </div>
   </nav>
 
     <div class="container-fluid p-0">
@@ -69,6 +84,20 @@
 
 
   </div>
+  <div id="footer"><div class="social-icons-mobile">
+    <a href="#">
+      <i class="fab fa-github"></i>
+    </a>
+    <a href="#">
+      <i class="fab fa-linkedin-in"></i>
+    </a>
+    <a href="#">
+      <i class="fab fa-youtube"></i>
+    </a>
+    <a href="#">
+      <i class="fas fa-envelope"></i>
+    </a>
+  </div></div>
 
 
     <!-- <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.3/umd/popper.min.js" integrity="sha384-ZMP7rVo3mIykV+2+9J3UJ46jBk0WLaUAdn689aCwoqbBJiSnjAK/l8WvCWPIPm49"
