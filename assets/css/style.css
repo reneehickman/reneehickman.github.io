@@ -39,19 +39,19 @@ section.content-section .content-item .content-date {
 }
 
 #about{
-    background:#ddd;
+    background:#fff;
 }
 #top{
-    background:#F9F9F9;
+    background:#fff;
 }
 
 
 #portfolio{
-    background:#F9F9F9;
+    background:#fff;
 }
 
 #contact{
-    background:#ddd;
+    background:#fff
 }
 
 section.content-section {
@@ -71,10 +71,10 @@ section.content-section{
 	#footer{
 		background:#f47e4f;
 		color:#fff;
-		min-height:50px;
+		min-height:70px;
 		border-top:7px solid#fff;
 		text-align:center;
-		padding-top:10px;
+		padding-top:20px;
 		box-shadow: 1px 1px 5px rgba(0, 0, 0, .3);
 	}
 
@@ -166,6 +166,7 @@ section.content-section{
 		color:#f47e4f;
 		border-radius:3em;
 		box-shadow: 1px 1px 5px rgba(0, 0, 0, .3);
+		margin:2px;
 	}
 
 	.social-icons-mobile a i:hover{
@@ -265,7 +266,7 @@ section.content-section{
 		display: -webkit-box;
 		display: -ms-flexbox;
 		display: flex;
-		margin-top:2.5em;
+		margin-top:2.0em;
 		padding: .5rem;
 	}
 	#sideNav .navbar-brand .img-profile {
@@ -337,6 +338,7 @@ section.content-section{
 		color:#f47e4f;
 		border-radius:3em;
 		box-shadow: 1px 1px 5px rgba(0, 0, 0, .3);
+		margin:2px;
 	}
 
 	.social-icons a i:hover{
