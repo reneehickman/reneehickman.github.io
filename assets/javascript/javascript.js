@@ -4,7 +4,19 @@ var mainSections = document.querySelectorAll("section");
 var lastId;
 var cur = [];
 
+
+// $('#sideNav').hide();
+
 window.addEventListener("scroll", function(){
+
+  // if ($(this).scrollTop()>0)
+  //    {
+  //       $('#sideNav').show();
+  //    }
+  //   else
+  //    {
+  //     $('#sideNav').hide();
+  //    }
 
   mainNavLinks.forEach(function(link) {
     var section = document.querySelector(link.hash);
@@ -14,10 +26,25 @@ window.addEventListener("scroll", function(){
             },
             500
           );
-        }            
+        } 
   });
 
 });
+
+51
+
+
+// $(window).scroll(function() {
+
+//     if ($(this).scrollTop()>0)
+//      {
+//         $('nav').fadeOut();
+//      }
+//     else
+//      {
+//       $('nav').fadeIn();
+//      }
+//  });
 
   // Activate scrollspy to add active class to navbar items on scroll
   $('body').scrollspy({
@@ -42,6 +69,15 @@ window.addEventListener("scroll", function(){
     $("#sideNav").addClass('borderin');
   });
 
+//home text
+  var typed = $(".typed");
 
+  $(function() {
+    typed.typed({
+      strings: ["Frontend Developer", "Multimedia Designer"],
+      typeSpeed: 100,
+      loop: true,
+    });
+  });
 
 
