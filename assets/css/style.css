@@ -3,6 +3,10 @@ html, body {
 	scroll-behavior: smooth;
   }
 
+  .cardz{
+	  margin-bottom:25px;
+  }
+
 body {
 	padding-top: 58px;
 	color: #868e96;
