@@ -14,6 +14,10 @@ body {
 	font-family: 'Poppins', helvetica;
 }
 
+.con{
+	max-width:480px;
+}
+
 .bg-primary{
     background: #f47e4f !important;
 }
@@ -106,14 +110,22 @@ font-weight:700;
 }
 
 #arrow {
+	margin-top:18%;
 	position:relative;
 	top:60%;
-}
-
-#arrow i{
+	max-width:170px;
 	background:#f47e4f;
 	color:#fff;
 	padding:10px 25px;
+	border-radius:20px;
+	font-size:1em;
+	margin:0px auto;
+}
+
+#arrow a{
+	background:#f47e4f;
+	color:#fff;
+	/* padding:10px 25px; */
 	border-radius:20px;
 	font-size:1em;
 }
