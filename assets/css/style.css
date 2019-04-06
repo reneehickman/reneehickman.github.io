@@ -130,6 +130,11 @@ font-weight:700;
 	font-size:1em;
 }
 
+#arrow a:hover{
+	color:rgba(255,255,255,.9);
+	text-decoration:none;
+}
+
 
 
 .textRow{
