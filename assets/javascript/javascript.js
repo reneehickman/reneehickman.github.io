@@ -31,7 +31,9 @@ window.addEventListener("scroll", function(){
 
 });
 
-51
+
+
+
 
 
 // $(window).scroll(function() {
@@ -50,6 +52,84 @@ window.addEventListener("scroll", function(){
   $('body').scrollspy({
     target: '#sideNav'
   });
+  
+
+  var fixmeTop = $('#page-top').offset().top;  
+$(window).scroll(function() {
+  var currentScroll = $(window).scrollTop();
+  if (currentScroll > $(window).height() && $(window).width() > 992){
+
+    $('#sideNav').css({                      
+      position: 'fixed',
+      top: '0px',
+      left: '0px',
+  });
+
+  $('.social-icons').css({                      
+    position: 'relative',
+    bottom: '20px',
+    left: '0px',
+});
+
+$('.social').css({                      
+  position: 'fixed'
+});
+
+  $("#sideNav").addClass('floatin');
+  $("#allContent").addClass('paddin');
+ 
+
+   } else{
+
+    $("#sideNav").addClass('floatin');
+
+
+     if ($("#allContent").hasClass('paddin')) {
+      $("#allContent").removeClass('paddin');
+     }
+
+    $('#sideNav').css({                      // if you scroll above it
+      position: 'static',
+      left:'0',
+    });
+
+    $('.social-icons').css({                      
+      position: 'static',
+      bottom: '20px'
+  });
+
+  $('.social').css({                      
+    position: 'static',
+    bottom: '0px'
+});
+
+// $('body').css({                    
+//   paddingLeft: '0rem',
+  
+// });
+
+   }
+
+   if (currentScroll > $(window).height() && $(window).width() < 991.98){
+
+    $("#sideNav").removeClass('floatin');
+
+  $("#allContent").removeClass('paddin');
+    $('#sideNav').css({                      
+      position: 'fixed',
+      top: '0px',
+      // left: '0px',
+      // width: '100%',
+      zIndex: '3',
+      // marginBottom: '20px'
+  });
+
+} else{
+  
+}
+
+});
+
 
 
   $("#hamburger").click(function(e){
@@ -69,6 +149,10 @@ window.addEventListener("scroll", function(){
     $("#sideNav").addClass('borderin');
   });
 
+
+ 
+  
+
 //home text
   var typed = $(".typed");
 
@@ -78,6 +162,22 @@ window.addEventListener("scroll", function(){
       typeSpeed: 100,
       loop: true,
     });
+  });
+
+
+    // ========================================================================= //
+  //  Owl Carousel Services
+  // ========================================================================= //
+
+
+  $('.services-carousel').owlCarousel({
+    autoplay: true,
+    loop: true,
+    margin: 20,
+    dots: true,
+    nav: false,
+    responsiveClass: true,
+    responsive: { 0: { items: 1 }, 768: { items: 2 }, 900: { items: 4 } }
   });
 
 
