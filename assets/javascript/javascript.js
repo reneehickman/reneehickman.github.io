@@ -158,7 +158,7 @@ $('.social').css({
 
   $(function() {
     typed.typed({
-      strings: ["Frontend Developer", "Multimedia Designer"],
+      strings: ["Software Developer", "Multimedia Designer"],
       typeSpeed: 100,
       loop: true,
     });
@@ -181,3 +181,25 @@ $('.social').css({
   });
 
 
+// ========================================================================= //
+//  Porfolio isotope and filter
+// ========================================================================= //
+// $(window).load(function(){
+
+  // var portfolioIsotope = $('.portfolio-container').isotope({
+  //   itemSelector: '.card',
+  //   layoutMode: 'fitRows'
+  // });
+
+  var portfolioIsotope = $('.cardz').isotope({
+    itemSelector: '.card',
+    layoutMode: 'fitRows'
+  });
+
+  $('#portfolio-flters li').on( 'click', function() {
+    $("#portfolio-flters li").removeClass('filter-active');
+    $(this).addClass('filter-active');
+    portfolioIsotope.isotope({ filter: $(this).data('filter') });
+  });
+
+// })

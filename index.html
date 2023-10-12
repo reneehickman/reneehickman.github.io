@@ -30,7 +30,8 @@
       <div class="header-content">
         <!-- <img class="img-fluid mx-auto" width="400px" src="assets/images/logo1-01.png"
         alt=""> -->
-        <h1>Renee Hickman</h1>
+        <img src="assets/images/logo2-01.png" class="logoR" >
+        <!--<h1>Renee Hickman</h1>-->
         <h5><span class="typed"></span></h5>
 
         <div id="arrow"><a href="#portfolio">Portfolio
@@ -48,12 +49,17 @@
     <nav class="navbar navbar-expand-lg bg-primary navbar-light borderin" id="sideNav">
       <a class="logoLg" href="#"><img class="img-fluid img-profile mx-auto logo" src="assets/images/logo1-01.png"
           alt=""></a>
-      <a class="logoMobile" href="#"><img class="img-fluid img-profile mx-auto mb-2 logo2"
+      <!-- <div class="mobilelogodiv"> -->
+        <a class="logoMobile" href="#"><img class="img-fluid img-profile mx-auto mb-2 logo2"
           src="assets/images/logo_mobile-02.png" alt=""></a>
+      <!-- </div> -->
+      <!--<span class="logosubtextmobile">Developer <span class="bullet">●</span> Designer <span class="bullet">●</span> Editor</span>
+      </div>
       <hr class="hr m-0">
+      <span class="logosubtext">Developer <span class="bullet">●</span> Designer <span class="bullet">●</span> Editor</span>--->
       <a class="navbar-brand js-scroll-trigger mr-0" href="#home">
         <span class="d-none d-lg-block">
-          <img class="img-fluid img-profile rounded-circle mx-auto mb-2 pic" src="assets/images/portrait.jpg" alt="">
+          <img class="img-fluid img-profile rounded-circle mx-auto mb-2 pic" src="assets/images/reneeandava.jpg" alt="">
         </span>
       </a>
       <button class="navbar-light navbar-toggler" type="button" id="hamburger" data-toggle="collapse"
@@ -111,19 +117,31 @@
 
             <div class="row">
               <div class="col-md-12">
-                <p class="mb-0 mt-0">Since I was young, I have always been inspired by the world around me. For the
-                  past 8 years,
-                  video editing and digital design has been the main way I express my love for the things I'm
+                <p class="mb-0 mt-0">
+                  Since I was young, I have always been inspired by the world around me. In 2010,
+                  video editing and digital design became a major way I expressed my love for the things I was
                   passionate about. Looking at my past work, I see that I'm ultimately driven by my unique
-                  perspective on relating to the world around me. No matter the medium, I enjoy inspiring the
-                  creativity in others.</p>
+                  perspective on relating to the world around me. No matter the medium, I enjoy inspiring creativity and passion in others.
+                </p>
                 <br>
-                <p class="mt-0">When I'm not on the ice playing hockey, it is my passion to design, edit, code and
-                  create. I
-                  am currently pursuring my niche for coding through SMU's coding bootcamp. I have a focus on
-                  front end development and am excited to see what is next on my journey.</p>
+                <p class="mt-0">
+                  It is my passion to design, edit, and
+                  create. In 2018 I decided to further pursue my passion for coding at Southern Methodist University. Given my extensive design background, I have a niche in
+                  front end and UI/UX development but over the years I have obtained skills that make me a well rounded full stack developer. 
+                  I am eager to learn and am excited to see what is next on my journey.
+                </p>
+                <p>
+                  In my free time you'll find me on the ice playing hockey or running with my dogs in the mountains of our home in Breckenridge, Colorado.
+                  I am a big animal lover and certainly have a passion for caring for animals.
+                  I am currently interested in finding a way I can utilize my techincal and design skills in a field pertaining to bettering the care and lives of animals. 
+                  It is important to me that I am passionate about the work I do at the next company I decide to work for! 
+                </p>
+                <p>
+                  Feel free to reach out by email or connect with me on LinkedIn!
+                </p>
                 <br>
-                <a id="resume" href="assets/images/Resume.pdf" target="_blank">Resume</a>
+                <a id="resume" href="assets/images/ReneeHickman_Resume_23.pdf" target="_blank">Resume</a>
+                <a href="https://www.linkedin.com/in/hickmanrenee/" target="_blank">LinkedIn</a>
               </div>
             </div>
 
@@ -152,8 +170,8 @@
 
                   <i class="ion-code"></i>
                   <span>CODING</span>
-                  <p class="separator">Full stack web developer with strong front-end skills in HTML, CSS, JavaScript
-                    and JQuery with an interest in futher developing back-end skills.</p>
+                  <p class="separator">Full stack web developer with strong front-end skills in React, HTML, CSS, and JavaScript. 
+                    Back-end skills include APIs, C#, .NET, Database management.</p>
 
                 </div>
 
@@ -195,7 +213,6 @@
       </section>
 
       <!-- <hr class="m-0"> -->
-
       <section class="content-section d-flex justify-content-center" id="portfolio">
         <div class="container-fluid">
           <div class="container bg-white contentRow">
@@ -206,8 +223,25 @@
               </div>
             </div>
 
+            <div class="portfolio-list">
+
+              <ul class="nav list-unstyled" id="portfolio-flters">
+                <li class="filter filter-active" data-filter=".all">all</li>
+                <li class="filter" data-filter=".code">Code</li>
+                <li class="filter" data-filter=".graphic">Graphic Design</li>
+                <li class="filter" data-filter=".motion">Motion Graphics</li>
+              </ul>
+  
+            </div>
+
+          
+
+
+          <!-- <div class="portfolio-container"> -->
+
             <div class="card-deck cardz">
-              <div class="card con">
+
+              <div class="card con code all graphic">
                 <img class="card-img-top" src="assets/images/hangmanTB.jpg" alt="Card image cap">
                 <div class="card-body">
                   <h5 class="card-title titlez">Tampa Bay Lightning Hangman</h5>
@@ -219,7 +253,8 @@
                       class="btn btn-secondary portfolio-button">Demo</button></a>
                 </div>
               </div>
-              <div class="card con">
+
+              <div class="card con code all graphic">
                 <img class="card-img-top" src="assets/images/triviagame.jpg" alt="Card image cap">
                 <div class="card-body">
                   <h5 class="card-title titlez">Star Sign Trivia</h5>
@@ -231,40 +266,73 @@
                       class="btn btn-secondary portfolio-button">Demo</button></a>
                 </div>
               </div>
-            </div>
 
-            <div class="card-deck cardz">
-              <div class="card con">
-                <img class="card-img-top" src="assets/images/screenRecordCustomer.gif" alt="Card image cap">
+              <div class="card con code all">
+                <img class="card-img-top" src="assets/images/cashcal.jpg" alt="Card image cap">
                 <div class="card-body">
-                  <h5 class="card-title titlez">Bamazon (node-mysql)</h5>
-                  <p class="card-text">Bamazon is an Amazon-like storefront CLI application created using Node.js, MySQL
-                    & inquirer npm. Output is styled with Chalk and tty-table NPM's. This app takes in customer orders,
-                    calculates the sales price, and depletes stock from the store's Inventory.</p>
-                  <a href="https://github.com/reneehickman/node-mysql" target="_blank"><button
+                  <h5 class="card-title titlez">CashCal</h5>
+                  <p class="card-text">CashCal is a full stack application created using React, Express, Node and MySQL. 
+                    It is a Calorie and Weight Tracker app driven by incentive. 
+                    Users earn rewards points that can be redeemed for real-world rewards like giftcards and discounts.</p>
+                  <a href="https://github.com/reneehickman/CashCal" target="_blank"><button
                       class="btn btn-secondary portfolio-button"><i class="fab fa-github"></i> Github</button></a>
-                  <a href="https://github.com/reneehickman/node-mysql" target="_blank"><button
-                      class="btn btn-secondary portfolio-button">Demo</button></a>
+                  <!-- <a href="https://cherry-tart-69309.herokuapp.com/" target="_blank"><button
+                      class="btn btn-secondary portfolio-button">Demo</button></a> -->
                 </div>
               </div>
-              <div class="card con">
+
+              <div class="card con code all">
                 <img class="card-img-top" src="assets/images/taskB.JPG" alt="Card image cap">
                 <div class="card-body">
                   <h5 class="card-title titlez">TaskBidder</h5>
-                  <p class="card-text">TaskBidder is a task management application created using React and Material-UI
-                    for a group project. This application allows users to create a list of tasks and add them to a
-                    marketplace where other users can bid on completing those tasks. Lowest bid wins.</p>
+                  <p class="card-text">TaskBidder is a task management application created using React and Material-UI. 
+                    This application allows users to create a list of tasks and add them to a
+                    marketplace where other users can bid on completing those tasks.</p>
                   <a href="https://github.com/reneehickman/TaskBidder" target="_blank"><button
                       class="btn btn-secondary portfolio-button"><i class="fab fa-github"></i> Github</button></a>
-                  <a href="https://cherry-tart-69309.herokuapp.com/" target="_blank"><button
-                      class="btn btn-secondary portfolio-button">Demo</button></a>
+                  <!-- <a href="https://cherry-tart-69309.herokuapp.com/" target="_blank"><button
+                      class="btn btn-secondary portfolio-button">Demo</button></a> -->
                 </div>
               </div>
-            </div>
 
+              <div class="card con all code">
+                <img class="card-img-top" src="assets/images/VideoThumbnailsPrint2.jpg" alt="Card image cap">
+                <div class="card-body">
+                  <h5 class="card-title titlez">Audit History (React, C# .NET)</h5>
+                  <p class="card-text">The ask was to develop an account history log table in a modal with sorting and filtering. Modal triggered by a button on the contract. Filter highlights matching strings. Consumes an audit history API microservice which grabs all event history for the selected contract.
+                    History data includes when, who, event type, changes made on contract and cancellation documents.</p>
+                  <a href="assets/images/VideoThumbnailsPrint2.jpg" target="_blank"><button
+                      class="btn btn-secondary portfolio-button">View</button></a>
+                </div>
+              </div>
 
-            <div class="card-deck cardz">
-              <div class="card con">
+              <div class="card con all code">
+                <img class="card-img-top" src="assets/images/VideoThumbnailsPrint12.jpg" alt="Card image cap">
+                <div class="card-body">
+                  <h5 class="card-title titlez">All Dealers (React, C# .NET)</h5>
+                  <p class="card-text">Consumes a dealer API microservice to view all dealers associated with a particular lender. 
+                    Each lender instance has a list of dealers where they can add and view all associated dealers. There is also an option for lenders to export their list of dealers in csv format. 
+                    The Lender Dealer ID’s are clickable and take you to a dealer specific page where the dealer can be edited.</p>
+                  <a href="assets/images/VideoThumbnailsPrint12.jpg" target="_blank"><button
+                      class="btn btn-secondary portfolio-button">View</button></a>
+                </div>
+              </div>
+
+              <div class="card con code all">
+                <img class="card-img-top" src="assets/images/travelBuck.jpg" alt="Card image cap">
+                <div class="card-body">
+                  <h5 class="card-title">travelBucket</h5>
+                  <p class="card-text">travelBucket is an application that allows users to search travel destinations
+                    around the world and learn about the weather and things to do. It also allows users to save a personalized list of their favorite places. 
+                  </p>
+                  <a href="https://github.com/reneehickman/travelBucket" target="_blank"><button
+                      class="btn btn-secondary portfolio-button"><i class="fab fa-github"></i> Github</button></a>
+                  <!-- <a href="https://reneehickman.github.io/travelBucket/" target="_blank"><button
+                      class="btn btn-secondary portfolio-button">Demo</button></a> -->
+                </div>
+              </div>
+
+              <div class="card con code all">
                 <img class="card-img-top" src="assets/images/survey.jpg" alt="Card image cap">
                 <div class="card-body">
                   <h5 class="card-title">Friend Finder</h5>
@@ -273,27 +341,108 @@
                     then displays the name and picture of the user with the best overall match.</p>
                   <a href="https://github.com/reneehickman/FriendFinder" target="_blank"><button
                       class="btn btn-secondary portfolio-button"><i class="fab fa-github"></i> Github</button></a>
-                  <a href="https://sleepy-mesa-10549.herokuapp.com/" target="_blank"><button
-                      class="btn btn-secondary portfolio-button">Demo</button></a>
+                  <!-- <a href="https://sleepy-mesa-10549.herokuapp.com/" target="_blank"><button
+                      class="btn btn-secondary portfolio-button">Demo</button></a> -->
                 </div>
               </div>
-              <div class="card con">
-                <img class="card-img-top" src="assets/images/travelBuck.jpg" alt="Card image cap">
-                <div class="card-body">
-                  <h5 class="card-title">travelBucket</h5>
-                  <p class="card-text">travelBucket is an application that allows users to search travel destinations
-                    around the world and allows users to save a personalized list of their favorite places.
-                  </p>
-                  <a href="https://github.com/reneehickman/travelBucket" target="_blank"><button
-                      class="btn btn-secondary portfolio-button"><i class="fab fa-github"></i> Github</button></a>
-                  <a href="https://reneehickman.github.io/travelBucket/" target="_blank"><button
-                      class="btn btn-secondary portfolio-button">Demo</button></a>
-                </div>
-              </div>
-            </div>
 
-            <div class="card-deck cardz">
-              <div class="card con">
+              <div class="card con all graphic">
+                <img class="card-img-top" src="assets/images/VideoThumbnailsPrint6.jpg" alt="Card image cap">
+                <div class="card-body">
+                  <h5 class="card-title titlez">Zealous Coffee Co. Website</h5>
+                  <p class="card-text">Designed and developed a website for a coffee company called Zealous Coffee Co. Created all wireframes, design comps, and
+                    frontend coding. HTML, CSS, JavaScript.</p>
+                  <a href="assets/images/VideoThumbnailsPrint6.jpg" target="_blank"><button
+                      class="btn btn-secondary portfolio-button">View</button></a>
+                </div>
+              </div>
+
+              <div class="card con all graphic">
+                <img class="card-img-top" src="assets/images/VideoThumbnailsPrint5.jpg" alt="Card image cap">
+                <div class="card-body">
+                  <h5 class="card-title titlez"><b><i>GO 10</i></b> | Transforming I-10</h5>
+                  <p class="card-text">Was the lead graphic designer on the <b><i>GO 10</b></i> TxDOT project for 4 years. Tasks included maintaining website, creating graphics for website, construction photo editing, and posting weekley closures with
+                    detailed closure maps. Other materials created regularly were newletters, electronic emails, email signatures, and news releases.</p>
+                  <a href="assets/images/VideoThumbnailsPrint5.jpg" target="_blank"><button
+                      class="btn btn-secondary portfolio-button">View</button></a>
+                </div>
+              </div>
+
+              <div class="card con all graphic">
+                <img class="card-img-top" src="assets/images/VideoThumbnailsPrint4.jpg" alt="Card image cap">
+                <div class="card-body">
+                  <h5 class="card-title titlez">The Southern Gateway Website Redesign</h5>
+                  <p class="card-text">Was tasked with leading the website redesign for the Southern Gateway Managed Lanes Project in Dallas, Texas. Worked closely with the client(TxDOT) to concept all wireframes. Took all photos and created all maps and graphis.</p>
+                  <a href="assets/images/VideoThumbnailsPrint4.jpg" target="_blank"><button
+                      class="btn btn-secondary portfolio-button">View</button></a>
+                </div>
+              </div>
+
+              <div class="card con all graphic">
+                <img class="card-img-top" src="assets/images/VideoThumbnailsPrint.jpg" alt="Card image cap">
+                <div class="card-body">
+                  <h5 class="card-title titlez">Sam Houston Tollway Website</h5>
+                  <p class="card-text">Was tasked with designing a website for the Sam Houston Tollway Ship Channel Bridge project out of Houston, Texas. Worked closely with client to create flow charts, wireframes and mockups.</p>
+                  <a href="assets/images/VideoThumbnailsPrint.jpg" target="_blank"><button
+                      class="btn btn-secondary portfolio-button">View</button></a>
+                </div>
+              </div>
+
+              <div class="card con code code all">
+                <img class="card-img-top" src="assets/images/screenRecordCustomer.gif" alt="Card image cap">
+                <div class="card-body">
+                  <h5 class="card-title titlez">Bamazon (node-mysql)</h5>
+                  <p class="card-text">Bamazon is an Amazon-like storefront CLI application created using Node.js, MySQL
+                    & inquirer npm. This app takes in customer orders,
+                    calculates the sales price, and depletes stock from the store's Inventory.</p>
+                  <a href="https://github.com/reneehickman/node-mysql" target="_blank"><button
+                      class="btn btn-secondary portfolio-button"><i class="fab fa-github"></i> Github</button></a>
+                  <!-- <a href="https://github.com/reneehickman/node-mysql" target="_blank"><button
+                      class="btn btn-secondary portfolio-button">Demo</button></a> -->
+                </div>
+              </div>
+
+              <div class="card con code all">
+                <img class="card-img-top" src="assets/images/videoThumbnailsCode.JPG" alt="Card image cap">
+                <div class="card-body">
+                  <h5 class="card-title titlez">NHL Post Web Scraper</h5>
+                  <p class="card-text">NHL Post is a full stack express application which follows MVC design pattern that lets users scrape news articles from NHL.com. Users can save articles as well as view and add commments to those saved articles.  
+                  Mongoose is used to store data in MongoDB and Handlebars to generate the HTML.</p>
+                  <a href="https://github.com/reneehickman/WebScraper" target="_blank"><button
+                      class="btn btn-secondary portfolio-button"><i class="fab fa-github"></i> Github</button></a>
+                  <!-- <a href="https://cherry-tart-69309.herokuapp.com/" target="_blank"><button
+                      class="btn btn-secondary portfolio-button">Demo</button></a> -->
+                </div>
+              </div>
+
+              <div class="card con code all">
+                <img class="card-img-top" src="assets/images/videoThumbnailsCode2.JPG" alt="Card image cap">
+                <div class="card-body">
+                  <h5 class="card-title">Click-a-Daisy</h5>
+                  <p class="card-text">Click-a-Daisy is a memory game built with React.js. The user must click on the images without clicking on the same image twice until all 16 images are clicked.
+                    Each image clicked scores one point but if the same image it clicked twice, the score resets to 0, and the game starts over.
+                  </p>
+                  <a href="https://github.com/reneehickman/ClickyGame" target="_blank"><button
+                      class="btn btn-secondary portfolio-button"><i class="fab fa-github"></i> Github</button></a>
+                  <!-- <a href="https://reneehickman.github.io/travelBucket/" target="_blank"><button
+                      class="btn btn-secondary portfolio-button">Demo</button></a> -->
+                </div>
+              </div>
+
+              <div class="card con code all">
+                <img class="card-img-top" src="assets/images/videoThumbnailsCode3.JPG" alt="Card image cap">
+                <div class="card-body">
+                  <h5 class="card-title">React Google Books Search</h5>
+                  <p class="card-text">Google Books Search is a MERN (Mongo, Express, React, Node) app that allows users to search for books using the Google Books API and save any book to a database. 
+                    Users can also delete any saved books.</p>
+                  <a href="https://github.com/reneehickman/react-google-books-search" target="_blank"><button
+                      class="btn btn-secondary portfolio-button"><i class="fab fa-github"></i> Github</button></a>
+                  <!-- <a href="https://sleepy-mesa-10549.herokuapp.com/" target="_blank"><button
+                      class="btn btn-secondary portfolio-button">Demo</button></a> -->
+                </div>
+              </div>
+
+              <div class="card con code all">
                 <img class="card-img-top" src="assets/images/trainScheduler.jpg" alt="Card image cap">
                 <div class="card-body">
                   <h5 class="card-title">Hogwarts Train Scheduler</h5>
@@ -306,8 +455,9 @@
                       class="btn btn-secondary portfolio-button">Demo</button></a>
                 </div>
               </div>
-              <div class="card con">
-                <img class="card-img-top" src="assets/images/screenshot.jpg" alt="Card image cap">
+
+              <div class="card con code all">
+                <img class="card-img-top" src="assets/images/burger.jpg" alt="Card image cap">
                 <div class="card-body">
                   <h5 class="card-title">Eat-Da-Burger</h5>
                   <p class="card-text">Eat-Da-Burger is a full stack restaurant application created using Node, Express,
@@ -315,58 +465,186 @@
                     route data to the app and Handlebars to generate the HTML.</p>
                   <a href="https://github.com/reneehickman/burger" target="_blank"><button
                       class="btn btn-secondary portfolio-button"><i class="fab fa-github"></i> Github</button></a>
-                  <a href="https://gentle-waters-64959.herokuapp.com/" target="_blank"><button
-                      class="btn btn-secondary portfolio-button">Demo</button></a>
+                  <!-- <a href="https://gentle-waters-64959.herokuapp.com/" target="_blank"><button
+                      class="btn btn-secondary portfolio-button">Demo</button></a> -->
                 </div>
               </div>
+
+              <div class="card con all motion">
+                <img class="card-img-top" src="assets/images/VideoThumbnails3.jpg" alt="Card image cap">
+                <div class="card-body">
+                  <h5 class="card-title titlez">Renee Hickman Demo Reel</h5>
+                  <p class="card-text">A demo reel of the video and motion projects worked on at Full Sail University.</p>
+                  <a href="https://youtu.be/02ACKufyRQo" target="_blank"><button
+                      class="btn btn-secondary portfolio-button">Watch Now</button></a>
+                </div>
+              </div>
+
+              <div class="card con all motion">
+                <img class="card-img-top" src="assets/images/VideoThumbnails4.jpg" alt="Card image cap">
+                <div class="card-body">
+                  <h5 class="card-title titlez">Poet Movie Trailer</h5>
+                  <p class="card-text">Created a movie trailer in After Effects by creating a 3D space environment and then keyframming a camera through the environment to the music.</p>
+                  <a href="https://www.youtube.com/watch?v=jMPiGLzLiyo" target="_blank"><button
+                      class="btn btn-secondary portfolio-button">Watch Now</button></a>
+                </div>
+              </div>
+
+              <div class="card con all motion">
+                <img class="card-img-top" src="assets/images/VideoThumbnails10.jpg" alt="Card image cap">
+                <div class="card-body">
+                  <h5 class="card-title titlez">Full Sail University Commercial</h5>
+                  <p class="card-text">Concepted everything from pre production to post production. Half the footage was filmed using a green screen. Compositing techniques were used.</p>
+                  <a href="https://youtu.be/KFdfrRkMvNU?si=2J5dfpQe1vahW7ML" target="_blank"><button
+                      class="btn btn-secondary portfolio-button">Watch Now</button></a>
+                </div>
+              </div>
+
+              <div class="card con all motion">
+                <img class="card-img-top" src="assets/images/VideoThumbnails6.jpg" alt="Card image cap">
+                <div class="card-body">
+                  <h5 class="card-title titlez">Skate Pink Commercial</h5>
+                  <p class="card-text">Skate Pink is a non profit fund raising organization focused on raising awareness and support for breast cancer. 
+                    Created a video commercial for the Orlando branch. Filmed and edited all video.</p>
+                  <a href="https://www.youtube.com/watch?v=JUDynVAch-4" target="_blank"><button
+                      class="btn btn-secondary portfolio-button">Watch Now</button></a>
+                </div>
+              </div>
+
+              <div class="card con all motion">
+                <img class="card-img-top" src="assets/images/VideoThumbnails9.jpg" alt="Card image cap">
+                <div class="card-body">
+                  <h5 class="card-title titlez">Ally Bank Commercial</h5>
+                  <p class="card-text">Created an infographic commercial for Ally Bank targeted towards young professionals. Came up with the concept, wrote
+                    the script and created motion graphics that kept up with the consistency of the branch.</p>
+                  <a href="https://www.youtube.com/watch?v=5jwXXzN9EQ8" target="_blank"><button
+                      class="btn btn-secondary portfolio-button">Watch Now</button></a>
+                </div>
+              </div>
+
+              <div class="card con all motion">
+                <img class="card-img-top" src="assets/images/VideoThumbnails7.jpg" alt="Card image cap">
+                <div class="card-body">
+                  <h5 class="card-title titlez">Zero Gravity Skateboard Co.</h5>
+                  <p class="card-text">Three different video clips were combined to create one seamless video. 
+                    A sky replacement was created using a rotoscoping technique in After Effects. 
+                    Boujou was used for motion tracking.</p>
+                  <a href="https://youtu.be/mFnUuHd0oGs" target="_blank"><button
+                      class="btn btn-secondary portfolio-button">Watch Now</button></a>
+                </div>
+              </div>
+
+              <div class="card con all motion">
+                <img class="card-img-top" src="assets/images/VideoThumbnails5.jpg" alt="Card image cap">
+                <div class="card-body">
+                  <h5 class="card-title titlez">Faze Apparel | Bayskatin'</h5>
+                  <p class="card-text">Edited a skateboard video for Faze Apparel out of San Francisco.</p>
+                  <a href="https://www.youtube.com/watch?v=B6HywtXDc0w" target="_blank"><button
+                      class="btn btn-secondary portfolio-button">Watch Now</button></a>
+                </div>
+              </div>
+
+              <div class="card con all motion">
+                <img class="card-img-top" src="assets/images/VideoThumbnails14.jpg" alt="Card image cap">
+                <div class="card-body">
+                  <h5 class="card-title titlez">3D and 2D ModernFX Intro</h5>
+                  <p class="card-text">3D and 2D intro for ModernFX - a 3D motion graphics company.</p>
+                  <a href="https://youtu.be/0AMkYzc2tSc?si=nGILIxE3dtOVhwXx&t=5" target="_blank"><button
+                      class="btn btn-secondary portfolio-button">Watch Now</button></a>
+                </div>
+              </div>
+
+              <div class="card con all motion">
+                <img class="card-img-top" src="assets/images/VideoThumbnails15.jpg" alt="Card image cap">
+                <div class="card-body">
+                  <h5 class="card-title titlez">DJ Classick Logo Animation</h5>
+                  <p class="card-text">A logo animation created for DJ Classick.</p>
+                  <a href="https://www.youtube.com/watch?v=_T9AfeupAic" target="_blank"><button
+                      class="btn btn-secondary portfolio-button">Watch Now</button></a>
+                </div>
+              </div>
+
+              <div class="card con all graphic">
+                <img class="card-img-top" src="assets/images/VideoThumbnailsPrint8.jpg" alt="Card image cap">
+                <div class="card-body">
+                  <h5 class="card-title titlez">Poet CD and Movie Trailer</h5>
+                  <p class="card-text">Created a logo, CD cover, and movie trailer. The movie trailer takes viewers on a ride through space and time. 
+                    Metaphorically speaking, this represents an invitation to the journey that Angels & Airwaves music can take you on where anything is possible.</p>
+                  <a href="assets/images/VideoThumbnailsPrint8.jpg" target="_blank"><button
+                      class="btn btn-secondary portfolio-button">View</button></a>
+                </div>
+              </div>
+
+              <div class="card con all graphic">
+                <img class="card-img-top" src="assets/images/VideoThumbnailsPrint9.jpg" alt="Card image cap">
+                <div class="card-body">
+                  <h5 class="card-title titlez">Skate Pink Campaign</h5>
+                  <p class="card-text">Fund raising organization focused on breast cancer awareness. 
+                    Each major city has its own branch of Skate Pink with a custom designed skateboard deck reflecting that city. 
+                    Designed logo, website, business cards, skateboard decks and a video commercial.</p>
+                  <a href="assets/images/VideoThumbnailsPrint9.jpg" target="_blank"><button
+                      class="btn btn-secondary portfolio-button">View</button></a>
+                </div>
+              </div>
+
+              <div class="card con all graphic motion">
+                <img class="card-img-top" src="assets/images/VideoThumbnails13.jpg" alt="Card image cap">
+                <div class="card-body">
+                  <h5 class="card-title titlez">Ellie Goulding Poster Design Speedart</h5>
+                  <p class="card-text">A timelapse video of the entire poster design from start to finish.</p>
+                  <a href="https://youtu.be/R58ZfbhOdD0" target="_blank"><button
+                      class="btn btn-secondary portfolio-button">Watch Now</button></a>
+                </div>
+              </div>
+
+              <div class="card con all graphic">
+                <img class="card-img-top" src="assets/images/VideoThumbnailsPrint7.jpg" alt="Card image cap">
+                <div class="card-body">
+                  <h5 class="card-title titlez">Mystical Coffee Co.</h5>
+                  <p class="card-text">Mystical Coffee is an exotic coffee company located in Plano, TX. Desgined logo, business cards, magazine ad and menu.</p>
+                  <a href="assets/images/VideoThumbnailsPrint7.jpg" target="_blank"><button
+                      class="btn btn-secondary portfolio-button">View</button></a>
+                </div>
+              </div>
+
+              <div class="card con all graphic">
+                <img class="card-img-top" src="assets/images/VideoThumbnailsPrint10.jpg" alt="Card image cap">
+                <div class="card-body">
+                  <h5 class="card-title titlez">The Purrfect Monster</h5>
+                  <p class="card-text">Created a publishing company for a childrens book I am writing. A digital painting technique was used to create the
+                    artwork for the book cover. Designed logo, sketches, artwork and mockup.</p>
+                  <a href="assets/images/VideoThumbnailsPrint10.jpg" target="_blank"><button
+                      class="btn btn-secondary portfolio-button">View</button></a>
+                </div>
+              </div>
+
+            </div> 
+
+
+            <!-- <div class="card-deck cardz">
+            <div class="card con all motion">
+              <img class="card-img-top" src="assets/images/VideoThumbnails3.jpg" alt="Card image cap">
+              <div class="card-body">
+                <h5 class="card-title titlez">Renee Hickman Demo Reel</h5>
+                <p class="card-text">A demo reel of the motion projects worked on at Full Sail University.</p>
+                <a href="https://github.com/reneehickman/Word-Guess-Game" target="_blank"><button
+                    class="btn btn-secondary portfolio-button">Watch Now</button></a>
+              </div>
             </div>
-
-
-            <!-- <div class="row pt-2">
-                <div class="col-md-6">
-                    <div class="containerImg">
-                        <a href="https://reneehickman.github.io/Word-Guess-Game/" target="_blank"><img class="img-fluid portfolioImg" src="assets/images/hangmanTB.jpg" alt="Hangman Thumbnail"></a>
-                        <div class="textRow">
-                          <a href="https://reneehickman.github.io/Word-Guess-Game/" target="_blank"><h3>Tampa Bay Lightning Hangman</h3></a>
-                          <a href="https://github.com/reneehickman/Word-Guess-Game" target="_blank"><i class="fab fa-github"></i></a>
-                        </div>
-                    </div>
-                </div>
-
-                <div class="col-md-6">
-                    <div class="containerImg">
-                      <a href="https://reneehickman.github.io/TriviaGame/" target="_blank"><img class="img-fluid portfolioImg" src="assets/images/triviagame.jpg" alt="trivia game Thumbnail"></a>
-                        <div class="textRow"> 
-                          <a href="https://reneehickman.github.io/TriviaGame/" target="_blank"><h3>Star Sign Trivia</h3></a>
-                          <a href="https://github.com/reneehickman/TriviaGame" target="_blank"><i class="fab fa-github"></i></a>
-                        
-                        </div>
-                    </div>
-                </div>
-            </div>
-
-            <div class="row">
-                <div class="col-md-6">
-                    <div class="containerImg">
-                        <a href="https://reneehickman.github.io/TrainScheduler/" target="_blank"><img class="img-fluid portfolioImg" src="assets/images/trainScheduler.jpg" alt="Triain scheduler Thumbnail"></a>
-                        <div class="textRow">
-                          <a href="https://reneehickman.github.io/TrainScheduler/" target="_blank"><h3>Hogwarts Train Scheduler</h3></a>
-                          <a href="https://github.com/reneehickman/TrainScheduler" target="_blank"><i class="fab fa-github"></i></a>
-                        </div>
-                    </div>
-                </div>
-
-                <div class="col-md-6">
-                    <div class="containerImg">
-                        <a href="https://reneehickman.github.io/travelBucket/" target="_blank"><img class="img-fluid portfolioImg" src="assets/images/travelBuck.jpg" alt="travelBucket Thumbnail"></a>
-                        <div class="textRow">
-                          <a href="https://reneehickman.github.io/travelBucket/" target="_blank"><h3>travelBucket</h3></a>
-                          <a href="https://github.com/reneehickman/travelBucket" target="_blank"><i class="fab fa-github"></i></a>
-                        </div>
-                    </div>
-                </div>
-
             </div> -->
+
+
+
+
+
+
+
+
+
+
+
+          <!-- </div> -->
+
 
 
           </div>
@@ -414,6 +692,7 @@
 
 <!-- <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.3/umd/popper.min.js" integrity="sha384-ZMP7rVo3mIykV+2+9J3UJ46jBk0WLaUAdn689aCwoqbBJiSnjAK/l8WvCWPIPm49"
         crossorigin="anonymous"></script> -->
+<script src="assets/lib/isotope/isotope.pkgd.min.js"></script>
 <script src="assets/lib/owlcarousel/owl.carousel.min.js"></script>
 <script src="/node_modules/waypoints/lib/jquery.waypoints.min.js"></script>
 <script src="/node_modules/waypoints/lib/shortcuts/sticky.min.js"></script>
